@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const s=new mongoose.Schema({key:{type:String,unique:true,required:true},value:mongoose.Schema.Types.Mixed,description:String,updatedBy:{type:mongoose.Schema.Types.ObjectId,ref:'User'},updatedAt:{type:Date,default:Date.now}},{timestamps:false});module.exports=mongoose.model('SystemSettings',s);

@@ -1,0 +1,1 @@
+const r=require('express').Router(),c=require('../controllers/feedbackController'),auth=require('../middleware/auth'),{requireRole}=require('../middleware/roleCheck');r.post('/',auth,requireRole('citizen'),c.create);module.exports=r;

@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const s=new mongoose.Schema({user:{type:mongoose.Schema.Types.ObjectId,ref:'User'},action:String,entityType:String,entityId:String,details:mongoose.Schema.Types.Mixed,ipAddress:String,userAgent:String,createdAt:{type:Date,default:Date.now}},{timestamps:false});module.exports=mongoose.model('ActivityLog',s);

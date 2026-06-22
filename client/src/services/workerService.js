@@ -1,0 +1,1 @@
+import api from './api';export const workerService={tasks:()=>api.get('/worker/tasks'),task:id=>api.get(`/worker/tasks/${id}`),accept:id=>api.patch(`/worker/tasks/${id}/accept`),start:(id,d)=>api.patch(`/worker/tasks/${id}/start`,d),complete:(id,d)=>api.post(`/worker/tasks/${id}/complete`,d),performance:()=>api.get('/worker/performance')};

@@ -1,0 +1,1 @@
+import api from './api';export const adminService={officers:()=>api.get('/admin/officers'),zones:()=>api.get('/admin/zones'),complaints:()=>api.get('/admin/complaints'),analytics:()=>api.get('/admin/analytics'),hotspots:()=>api.get('/admin/hotspots'),performance:()=>api.get('/admin/workers/performance')};

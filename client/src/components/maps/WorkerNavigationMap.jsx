@@ -1,0 +1,1 @@
+import{Button,Stack}from'@mui/material';import ComplaintMap from'./ComplaintMap';export default function WorkerNavigationMap({lat,lng}){return <Stack spacing={2}><ComplaintMap lat={lat} lng={lng}/><Button variant='contained' href={`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`} target='_blank'>Get Directions</Button></Stack>}

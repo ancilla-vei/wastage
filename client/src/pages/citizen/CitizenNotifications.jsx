@@ -1,0 +1,1 @@
+import{List,ListItem,ListItemText,Typography}from'@mui/material';import useNotifications from'../../hooks/useNotifications';export default()=>{const{items}=useNotifications();return <><Typography variant='h3'>Notifications</Typography><List>{items.map(n=><ListItem key={n._id}><ListItemText primary={n.title} secondary={n.message}/></ListItem>)}</List></>}

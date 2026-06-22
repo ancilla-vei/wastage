@@ -1,0 +1,1 @@
+import{Box,CircularProgress,Typography}from'@mui/material';export default({text='Loading...'})=><Box sx={{display:'grid',placeItems:'center',p:4}}><CircularProgress/><Typography sx={{mt:2}}>{text}</Typography></Box>;

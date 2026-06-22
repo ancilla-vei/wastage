@@ -1,0 +1,1 @@
+import{Alert,Typography}from'@mui/material';export default({complaint})=><Alert severity='warning'><Typography fontWeight={700}>This location already has a report: #{complaint?.complaintId}</Typography><Typography>{complaint?.supportCount} citizens have reported this.</Typography></Alert>;

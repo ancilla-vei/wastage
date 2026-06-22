@@ -1,0 +1,1 @@
+import{Stepper,Step,StepLabel}from'@mui/material';const steps=['pending','assigned','in_progress','completed'];export default({status})=><Stepper activeStep={Math.max(0,steps.indexOf(status))} alternativeLabel>{steps.map(s=><Step key={s}><StepLabel>{s.replace('_',' ')}</StepLabel></Step>)}</Stepper>;

@@ -1,0 +1,1 @@
+const jwt=require('jsonwebtoken');exports.signAccessToken=u=>jwt.sign({id:u._id,role:u.role},process.env.JWT_SECRET||'dev_secret',{expiresIn:process.env.JWT_EXPIRES_IN||'15m'});exports.signRefreshToken=u=>jwt.sign({id:u._id,role:u.role},process.env.JWT_REFRESH_SECRET||'dev_refresh',{expiresIn:process.env.JWT_REFRESH_EXPIRES_IN||'7d'});

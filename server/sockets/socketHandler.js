@@ -1,0 +1,1 @@
+module.exports=io=>io.on('connection',socket=>{socket.on('join:zone',z=>socket.join(`zone:${z}`));socket.on('join:user',u=>socket.join(`user:${u}`));socket.on('join:admin',()=>socket.join('admin'));});

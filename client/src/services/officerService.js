@@ -1,0 +1,1 @@
+import api from './api';export const officerService={workers:()=>api.get('/officer/workers'),createWorker:d=>api.post('/officer/workers',d),complaints:()=>api.get('/officer/zone/complaints'),analytics:()=>api.get('/officer/zone/analytics'),hotspots:()=>api.get('/officer/zone/hotspots'),assign:(id,d)=>api.post(`/officer/complaints/${id}/assign`,d)};

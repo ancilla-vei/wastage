@@ -1,0 +1,1 @@
+exports.success=(res,message,data={},status=200)=>res.status(status).json({success:true,message,data,errors:[]});exports.error=(res,message,errors=[],status=500)=>res.status(status).json({success:false,message,data:{},errors});

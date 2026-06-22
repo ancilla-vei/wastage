@@ -1,0 +1,1 @@
+export const ZONES=['Ullal','Kadri','Kankanady','Hampankatta','Surathkal','Bejai'];export const AREAS=['Ullal','Kadri','Kankanady','Hampankatta','Surathkal','Bejai','Falnir','Pandeshwar','Car Street'];export const severityColor={low:'success',medium:'warning',high:'warning',critical:'error'};

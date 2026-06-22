@@ -1,0 +1,1 @@
+import api from './api';export const complaintService={create:d=>api.post('/complaints',d),my:()=>api.get('/complaints/my'),all:q=>api.get('/complaints',{params:q}),one:id=>api.get(`/complaints/${id}`),support:id=>api.post(`/complaints/${id}/support`),assign:(id,d)=>api.patch(`/complaints/${id}/assign`,d),verify:id=>api.patch(`/complaints/${id}/verify`)};

@@ -1,0 +1,1 @@
+const Notification=require('../models/Notification');async function notify(io,recipient,type,title,message,data={}){const n=await Notification.create({recipient,type,title,message,data});io?.to(`user:${recipient}`).emit('notification:new',n);return n}module.exports={notify};
