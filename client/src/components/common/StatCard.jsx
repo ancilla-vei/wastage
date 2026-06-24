@@ -1,0 +1,1 @@
+import{Card,CardContent,Typography}from'@mui/material';export default({title,value,color='primary.main'})=><Card><CardContent><Typography color='text.secondary'>{title}</Typography><Typography variant='h4' sx={{color,fontWeight:800}}>{value}</Typography></CardContent></Card>;

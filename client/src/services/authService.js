@@ -1,0 +1,1 @@
+import api from './api';export const authService={login:d=>api.post('/auth/login',d),register:d=>api.post('/auth/register',d),staffLogin:d=>api.post('/auth/staff/login',d),logout:()=>api.post('/auth/logout')};

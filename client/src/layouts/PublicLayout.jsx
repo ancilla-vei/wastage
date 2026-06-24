@@ -1,0 +1,1 @@
+import{Container}from'@mui/material';import{Outlet}from'react-router-dom';import Navbar from'../components/common/Navbar';import Footer from'../components/common/Footer';export default function PublicLayout(){return <><Navbar/><Container maxWidth='xl' sx={{py:4,minHeight:'70vh'}}><Outlet/></Container><Footer/></>}

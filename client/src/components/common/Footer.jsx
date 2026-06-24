@@ -1,0 +1,1 @@
+import{Box,Typography}from'@mui/material';export default()=> <Box sx={{p:3,mt:6,bgcolor:'primary.main',color:'white',textAlign:'center'}}><Typography>© Mangalore City Municipal Corporation • Swachh Mangalore Mission</Typography></Box>;

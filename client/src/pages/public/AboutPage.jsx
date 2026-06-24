@@ -1,0 +1,1 @@
+import{Paper,Typography}from'@mui/material';export default()=> <Paper sx={{p:4}}><Typography variant='h3'>About Swachh Mangalore</Typography><Typography sx={{mt:2}}>This professional smart city portal combines citizen reports, AI validation, municipal workflows, worker tasking, and analytics for cleaner public spaces.</Typography></Paper>;

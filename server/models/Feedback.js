@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const s=new mongoose.Schema({complaint:{type:mongoose.Schema.Types.ObjectId,ref:'Complaint',required:true},citizen:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true},rating:{type:Number,min:1,max:5,required:true},comment:String,createdAt:{type:Date,default:Date.now}},{timestamps:false});module.exports=mongoose.model('Feedback',s);

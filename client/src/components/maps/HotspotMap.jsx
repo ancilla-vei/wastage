@@ -1,0 +1,1 @@
+import ComplaintMap from'./ComplaintMap';export default function HotspotMap({items=[]}){const h=items[0];return <ComplaintMap lat={h?.location?.coordinates?.[1]||12.8698} lng={h?.location?.coordinates?.[0]||74.8431}/>;}

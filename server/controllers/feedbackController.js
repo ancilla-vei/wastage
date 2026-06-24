@@ -1,0 +1,1 @@
+const Feedback=require('../models/Feedback');const {success}=require('../utils/responseHelper');exports.create=async(req,res)=>success(res,'Feedback submitted',{feedback:await Feedback.create({...req.body,citizen:req.user._id})},201);

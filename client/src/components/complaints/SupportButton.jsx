@@ -1,0 +1,1 @@
+import{Button}from'@mui/material';import{complaintService}from'../../services/complaintService';export default function SupportButton({id,onDone}){return <Button variant='outlined' onClick={async()=>{await complaintService.support(id);onDone?.()}}>Support this complaint</Button>}

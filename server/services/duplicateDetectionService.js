@@ -1,0 +1,1 @@
+const Complaint=require('../models/Complaint');exports.findDuplicate=(lat,lng)=>Complaint.findOne({location:{$nearSphere:{$geometry:{type:'Point',coordinates:[Number(lng),Number(lat)]},$maxDistance:50}},status:{$in:['pending','assigned','in_progress']}}).populate('zone','name').lean();
